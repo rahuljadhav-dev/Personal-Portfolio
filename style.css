@@ -1,4 +1,4 @@
-/* ===== Reset & Base ===== */
+/* ===== Custom Styles ===== */
 * {
   margin: 0;
   padding: 0;
@@ -65,13 +65,6 @@ h2 {
 
 .nav-links a:hover {
   color: #4b00ff;
-}
-
-.theme-toggle {
-  background: transparent;
-  border: none;
-  font-size: 1.4rem;
-  cursor: pointer;
 }
 
 /* ===== Hero Section ===== */
@@ -205,6 +198,23 @@ h2 {
   color: #4b00ff;
 }
 
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 14px;
+}
+
+.project-card a:hover {
+  background-color: #023e8a;
+  transform: translateY(-2px);
+}
+
 /* ===== Contact ===== */
 .contact form {
   display: flex;
@@ -243,40 +253,6 @@ h2 {
   background: #f1f1f1;
   color: #555;
   margin-top: 3rem;
-}
-
-/* ===== Dark Mode Support ===== */
-body.dark-mode {
-  background: #121212;
-  color: #eee;
-}
-
-body.dark-mode .header {
-  background: #1f1f1fdd;
-}
-
-body.dark-mode .nav-links a {
-  color: #eee;
-}
-
-body.dark-mode .project-card {
-  background: #1e1e1e;
-}
-
-body.dark-mode .btn,
-body.dark-mode .contact button {
-  background: #bb86fc;
-  color: black;
-}
-
-body.dark-mode .btn:hover,
-body.dark-mode .contact button:hover {
-  background: #9e65ff;
-}
-
-body.dark-mode .skill-tags span {
-  background: #bb86fc33;
-  color: #bb86fc;
 }
 
 /* ===== Responsive Design ===== */
@@ -360,7 +336,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ===== Show All Button (if used) ===== */
+/* ===== Show All Button ===== */
 .show-all-btn {
   display: none;
   margin: 2rem auto;
@@ -376,20 +352,4 @@ html {
 
 .show-all-btn:hover {
   background: #3700b3;
-}
-.project-card a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #0077b6;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  font-size: 14px;
-}
-
-.project-card a:hover {
-  background-color: #023e8a;
-  transform: translateY(-2px);
 }

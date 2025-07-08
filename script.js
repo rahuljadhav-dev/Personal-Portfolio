@@ -5,7 +5,11 @@ document.getElementById("resumeDownload").addEventListener("click", () => {
 
 // === Typewriter Effect ===
 const typewriter = document.querySelector(".typewriter");
-const texts = ["Full Stack Java Developer", "Spring Boot + Angular Expert", "Building Real-World Projects"];
+const texts = [
+  "Full Stack Java Developer",
+  "Spring Boot + Angular Expert",
+  "Building Real-World Projects"
+];
 let index = 0;
 let charIndex = 0;
 
@@ -32,7 +36,7 @@ function erase() {
 type();
 
 // === EmailJS ===
-emailjs.init("qOBa4XSMyXcOESvl0"); // Replace this with your actual public key
+emailjs.init("qOBa4XSMyXcOESvl0");
 
 const form = document.getElementById("contact-form");
 const msg = document.getElementById("form-msg");
@@ -52,16 +56,6 @@ form.addEventListener("submit", function (e) {
       console.error("Error:", error);
     }
   );
-});
-
-// === Theme Toggle ===
-const themeToggle = document.getElementById("themeToggle");
-
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-
-  // Toggle icon
-  themeToggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 });
 
 // === Section Display Logic ===
@@ -104,9 +98,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   showAllBtn.addEventListener("click", showAllSections);
 });
-
-
-  
-
-
-
